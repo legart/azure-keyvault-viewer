@@ -31,5 +31,5 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: compose-distribution-linux
-          path: build/compose/binaries/main-app/**
+          path: build/compose/binaries/main/app/**
           if-no-files-found: error
