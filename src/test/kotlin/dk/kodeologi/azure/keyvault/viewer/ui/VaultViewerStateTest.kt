@@ -99,7 +99,10 @@ class VaultViewerStateTest {
 
         assertFalse(state.isExportTargetDialogOpen)
         assertEquals(
-            "az keyvault secret set --vault-name 'target-vault' --name 'db-password' --value 'p@ss'\"'\"'word value'",
+            """
+            # subscription: Engineering
+            az keyvault secret set --vault-name 'target-vault' --name 'db-password' --value 'p@ss'"'"'word value'
+            """.trimIndent(),
             state.exportCommands
         )
         coVerify(exactly = 1) { client.getSecret(secretRef) }
