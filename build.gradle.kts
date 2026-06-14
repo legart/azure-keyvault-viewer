@@ -1,7 +1,7 @@
 plugins {
-    kotlin("jvm") version "2.3.21"
-    id("org.jetbrains.compose") version "1.11.0"
-    id("org.jetbrains.kotlin.plugin.compose") version "2.3.21"
+    kotlin("jvm") version "2.4.0"
+    id("org.jetbrains.compose") version "1.11.1"
+    id("org.jetbrains.kotlin.plugin.compose") version "2.4.0"
 }
 
 group = "dk.kodeologi.azure.keyvault.viewer"
@@ -16,9 +16,9 @@ repositories {
 dependencies {
     implementation(compose.desktop.currentOs)
     implementation("org.jetbrains.compose.material3:material3:1.10.0+dev3105")
-    implementation("com.azure:azure-identity:1.18.3")
-    implementation("com.squareup.okhttp3:okhttp:5.3.2")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.21.4")
+    implementation("com.azure:azure-identity:1.18.4")
+    implementation("com.squareup.okhttp3:okhttp:5.4.0")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.22.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
 
     testImplementation(kotlin("test"))
