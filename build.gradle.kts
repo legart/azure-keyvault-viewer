@@ -10,12 +10,11 @@ version = "1.0.0"
 repositories {
     mavenCentral()
     google()
-    maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    implementation("org.jetbrains.compose.material3:material3:1.10.0+dev3105")
+    implementation("org.jetbrains.compose.material3:material3:1.9.0")
     implementation("com.azure:azure-identity:1.19.0")
     implementation("com.squareup.okhttp3:okhttp:5.5.1")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.23.0")
